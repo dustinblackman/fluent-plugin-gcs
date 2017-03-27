@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fluent/plugin/gcs/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fluent-plugin-gcs"
+  spec.name          = "fluent-plugin-gcs-dustinblackman"
   spec.version       = Fluent::GCSPlugin::VERSION
   spec.authors       = ["Daichi HIRATA"]
   spec.email         = ["hirata.daichi@gmail.com"]
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "fluentd", "~> 0.12.0"
+  spec.add_runtime_dependency "fluentd", "~> 0.14.0"
   spec.add_runtime_dependency "google-cloud-storage", "~> 0.23.2"
 
   spec.add_development_dependency "bundler", "~> 1.13"
